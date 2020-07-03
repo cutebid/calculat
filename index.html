@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> calculator using grid box </title>
+	<style>
+         .container {display: grid;
+                     grid-template-rows: 50px 1fr 50fr;
+                     grid-template-columns: 1fr;
+                     grid-gap: 5px;
+                  /*  width: 200px;
+                     height: 600px;*/
+                    }
+         .button    {display: grid;
+                     grid-template-rows: repeat(4,1fr);
+                     grid-template-columns: repeat(4,1fr);
+                     grid-gap: 5px;
+                    }
+        input {grid-column: 1/2;
+        	        background-color: red;
+                     }
+         /*.button2   {grid-column: 1/2;
+                    }*/
+	</style>
+</head>
+<body>
+	<div class="container">
+	    <div class="inputbox">
+	       <input type="text" name="answer">
+	    </div>
+	    <div class="button"> 
+	    	<div class="btn1"> <button> 9 </button> </div>
+	        <div class="btn2"> <button> 8 </button> </div>
+            <div class="btn3"> <button> 7 </button> </div>
+            <div class="btn4"> <button> + </button> </div>
+            <div class="btn5"> <button> 6 </button> </div>
+            <div class="btn6"> <button> 5 </button> </div>
+            <div class="btn7"> <button> 4 </button> </div>
+            <div class="btn8"> <button> - </button> </div>
+            <div class="btn9"> <button> 3 </button> </div>
+            <div class="btn10"> <button> 2 </button> </div>
+            <div class="btn11"> <button> 1 </button> </div>
+            <div class="btn12"> <button> * </button> </div>
+            <div class="btn13"> <button> 0 </button> </div>
+            <div class="btn14"> <button> / </button> </div>
+            <div class="btn15"> <button> % </button> </div>
+            <div class="btn16"> <button> = </button> </div> 
+        </div>
+        <div class="button2"> <button> DELETE </button>
+        </div>
+	</div>
+
+</body>
+</html>
